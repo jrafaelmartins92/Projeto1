@@ -1,0 +1,30 @@
+#include <stdlib.h>
+#include <stdio.h>
+main()
+{
+
+int opcao;
+
+printf("3 - Infantil I - 3 anos\n");
+printf("4 - Infantil II - 4 anos\n");
+printf("5 - Infantil III - 5 anos\n");
+printf("6 - Primeiro Ano  - 6 anos\n");
+printf("7 - Segundo Ano  - 7 anos\n");
+printf("Escolha a matricula\n");
+scanf("%d";&opcao);
+
+while(opcao<3 || opcao>7)
+scanf("%d";&opcao);
+
+switch (opcao)
+{
+   case3: printf("Você escolheu Infatil  I - 3 anos\n");break;
+   case4: printf("Você escolheu Infantil II - 4 anos\n");break;
+   case5: printf("Você escolheu Infantil III - 5 anos\n");break;
+   case6: printf("Você escolheu Primeiro Ano  - 6 anos\n");break;
+   case7:printf("Você escolheu Segundo Ano  - 7 anos\n");break;
+   default:printf("\n nao existe defalt, a validação bloqueia\n');break;
+}
+ system("pause");
+}
+
